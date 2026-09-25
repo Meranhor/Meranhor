@@ -1,8 +1,8 @@
 # Christophe Pirolley
 
 Full-stack Python/Django developer. I design, build and operate transactional
-platforms on my own: marketplaces with escrow payments, wealth management
-platforms with card issuing, AI agents in production.
+platforms on my own: marketplaces with escrow payments, fintech platforms with
+card issuing, AI agents in production.
 
 Sofia, Bulgaria — 100% remote. French (native), English (fluent).
 
@@ -12,7 +12,9 @@ Sofia, Bulgaria — 100% remote. French (native), English (fluent).
 Peer-to-peer marketplace with escrow-protected payments. Sole designer,
 developer and operator. Live since November 2025, 600+ users, 170+ orders.
 
-- 28 Django apps, ~90 models, 92 Celery tasks, ~4,000 tests
+→ [Architecture case study](https://github.com/Meranhor/starshipdealers-architecture)
+
+- 28 Django apps, ~375,000 lines of code, 92 Celery tasks, ~4,000 tests
 - Multi-PSP payments (Stripe, PayPal, crypto), escrow, internal wallet and
   ledger, automated payouts with a security hold window
 - MCP server exposing 29 tools over OAuth 2.1, so AI agents run day-to-day
@@ -30,8 +32,10 @@ developer and operator. Live since November 2025, 600+ users, 170+ orders.
 `Django` `DRF` `Celery` `Redis` `PostgreSQL` `Docker` `Cloudflare` `HTMX`
 
 ### [GoldenHive](https://www.goldenhive.io)
-Online-bank-style wealth management platform. Freelance, sole developer,
-2024-2026.
+Fintech platform: accounts, payment cards, investments and KYC. Freelance,
+sole developer, 2024-2026.
+
+→ [Architecture case study](https://github.com/Meranhor/goldenhive-architecture)
 
 - Payment card issuing API integration, investment system (subscriptions,
   returns, withdrawals), KYC, fees and transactions
@@ -42,7 +46,9 @@ Online-bank-style wealth management platform. Freelance, sole developer,
 B2B supplier price negotiation platform. Freelance, sole developer. Sold in
 2026 and handed over to the buyer with zero downtime.
 
-- Card issuing integration with JWT RS256 request signing
+→ [Architecture case study](https://github.com/Meranhor/negotination-architecture)
+
+- Card issuing integration with signed API requests
 - Webhook dispatcher handling 33 event types: card lifecycle, authorizations,
   3-D Secure, Apple Pay, KYC
 
